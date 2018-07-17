@@ -8,7 +8,56 @@
 	
 	<body>
 		
+		<div class='title'>
+			<h1>Super Carousel</h1>
+			<h3><i>Roll on, images, roll on!</i></h3>
+		</div>
+		<section>
+			<div class='container'>
+				<div class='dashboard-btn add-btn' onClick='newImg()'>+</div>
+				<div class='dashboard-btn delete-btn' onClick='showDelete()'>–</div>
+
+
+				<div class='dashboard add'>
+					<h3 style='font-family:avenir'>Insert a new image</h3>
+					<input type='text' class='field' placeholder='Image URL'/>
+					<input type='text' class='field' placeholder='Caption'/><br/>
+					<input type='button' class='submit-btn' value='Submit' onClick='submitImg()'/>
+					<input type='button' class='cancel-btn' value='Done' onClick='cancel(this)'/>
+				</div>
+
+				<div class='dashboard delete'>
+					<h3 style='font-family:avenir'>Delete an Image</h3>
+					<div class='image-row select'></div>
+					<input type='button' value='Delete' onClick='deleteImg()'/>
+					<input type='button' value='Done' onClick='cancel(this)'/>
+				</div>
+
+				<div class='screen'>
+					<img />
+					<div class='arrow next slide' onClick='moveSlide(1)'>►</div>
+					<div class='arrow prev slide' onClick='moveSlide(-1)'>◄</div>
+					<div class='caption-frame' onClick='makeVisible()'>
+						<div class='caption-text'></div>
+					</div>
+				</div>
+				<div class='dot-row'></div>
+				<div class='auto-row'>
+					<div class='auto-btn' onClick='playPause()'>▶️</div>
+				</div>
+			</div>
+		</section>
 		
+		<div class="features">
+			<h2>Features</h2>
+			<ul>
+				<li>Manually roll through images (◄ and ►)</li>
+				<li>Select images directly</li>
+				<li>Toggle autoplay on and off (▶️)</li>
+				<li>Add your own image (+)</li>
+				<li>Delete images (-)</li>
+			</ul>
+		</div>
 		
 		<script src="scripts.js"></script>
 	</body>
