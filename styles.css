@@ -170,6 +170,16 @@ img {
   border-right-color: #428bca;
 }
 
+.btn {
+	width: 20%;
+	margin: 2%;
+}
+
+.field {
+	width: 35%;
+	margin: 1%;
+}
+
 .delete-btn:hover {
   color: indianred;
   cursor: pointer;
@@ -179,6 +189,7 @@ img {
 
 .dashboard {
   display: none;
+	background-color: white;
   position: relative;
   border-style: solid;
   border-width: 1px;
